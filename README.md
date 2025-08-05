@@ -22,7 +22,7 @@ python space_facts.py
 
 ## Configuration
 
-Copy `.env.example` to `.env` and customize:
+Copy `.env` and customize:
 
 ```bash
 #PYTHON_IMAGE=local-python-dev
@@ -75,18 +75,19 @@ Any IDE supporting remote Python interpreters can connect to the running contain
 
 ```
 docker-python-dev/
-├── docker-compose.yml    # Development environment
+├── docker-compose.dev.yml    # Development environment
 ├── Dockerfile                # Python environment
 ├── requirements.txt          # Dependencies
 ├── .env.example             # Environment template
 ├── Makefile                 # Commands
-├── space_facts.py           # Demo script
+├── src/
+│   └── space_facts.py       # Demo script
 └── README.md
 ```
 
 ## Demo Script
 
-The included `space_facts.py` demonstrates real API calls:
+The included `src/space_facts.py` demonstrates real API calls:
 - Tracks International Space Station location
 - Shows current astronauts in space  
 - Fetches NASA astronomy data
@@ -150,4 +151,4 @@ MIT License - see LICENSE file for details.
 
 Questions or issues: [GitHub Issues](https://github.com/EriWinckler/docker-python-dev/issues)
 
-Connect: [LinkedIn](https://www.linkedin.com/in/eridan-winckler-449798169/))
+Connect: [LinkedIn](https://www.linkedin.com/in/eridan-winckler-449798169/)

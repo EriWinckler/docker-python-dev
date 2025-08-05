@@ -78,10 +78,10 @@ docker-python-dev/
 ├── docker-compose.dev.yml    # Development environment
 ├── Dockerfile                # Python environment
 ├── requirements.txt          # Dependencies
-├── .env.example             # Environment template
-├── Makefile                 # Commands
+├── .env                      # Environment template
+├── Makefile                  # Commands
 ├── src/
-│   └── space_facts.py       # Demo script
+│   └── space_facts.py        # Demo script
 └── README.md
 ```
 
@@ -145,7 +145,7 @@ MIT License - see LICENSE file for details.
 ## Related Articles
 
 - [Building a Secure Isolated Development Environment for Google's Gemini CLI](https://medium.com/@efwinckler/building-a-secure-isolated-development-environment-for-googles-gemini-cli-83fbb443be81)
-- [Stop Polluting Your Development Machine: The Clean Python Environment Revolution](https://medium.com/@your-medium-handle/your-article-url)
+- [Stop Polluting Your Development Machine: The Clean Python Environment Revolution](https://efwinckler.medium.com/stop-polluting-your-development-machine-the-clean-python-environment-revolution-3c94e4c1dc27)
 
 ## Support
 

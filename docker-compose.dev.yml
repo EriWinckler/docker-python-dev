@@ -1,0 +1,19 @@
+services:
+  python-dev:
+    image: ${PYTHON_IMAGE:-local-python-dev}
+    container_name: python-dev-container
+    build:
+      context: ${DOCKERFILE_CONTEXT:-.}
+      dockerfile: ${DOCKERFILE_PATH:-Dockerfile}
+    volumes:
+      - ${PROJECT_DIR:-./}:/workspace
+      - python-cache:/root/.cache/pip
+    ports:
+      - "${HOST_PORT:-8000}:8000"
+    working_dir: /workspace
+    command: sleep infinity
+    environment:
+      - PYTHONPATH=/workspace
+
+volumes:
+  python-cache:
